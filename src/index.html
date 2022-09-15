@@ -43,7 +43,7 @@
           <input
             class="form__input"
             type="number"
-            name="age"
+            name="user-age"
             min="1"
             max="100"
             value="12"
@@ -91,22 +91,27 @@
       <fieldset class="container">
         <legend class="form__title">An interesting fact about you!</legend>
         <label class="form__field">
-          Do you like cats? Yes
-          <input
-            class="form__input"
-            type="radio"
-            name="user-love-cats"
-            value="yes"
-            required
-          >
-          No
-          <input
-            class="form__input"
-            type="radio"
-            name="user-love-cats"
-            value="no"
-            required
-          >
+          Do you like cats?
+          <label>
+            <input
+              class="form__input"
+              type="radio"
+              name="user-love-cats"
+              value="yes"
+              required
+            >
+            Yes
+          </label>
+          <label>
+            <input
+              class="form__input"
+              type="radio"
+              name="user-love-cats"
+              value="no"
+              required
+            >
+            No
+          </label>
         </label>
         <label class="form__field">
           What is your favorite color?
@@ -153,13 +158,11 @@
         <label class="form__field">
           Comments:
           <textarea 
-          name="user-comments" 
-          rows="2" 
-          cols="15"
-          >
-          </textarea>
+            name="user-comments" 
+            rows="2" 
+            cols="15"
+         ></textarea>
         </label>
-
         <label class="form__field">
           Would you recommend us?
           <select name="user-recommend">
@@ -170,7 +173,6 @@
       </fieldset>
       <button class="form__btn" type="submit">Submit</button>
     </form>
-
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
